@@ -98,3 +98,42 @@ int main() {
 
     return 0;
 }
+
+
+// case statements
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    string colour;
+    cout << "Enter the light colour: ";
+    cin >> colour;
+    
+    if (colour == "Red") cout << "STOP" << endl;
+    else if (colour == "Yellow") cout << "SLOW DOWN" << endl;
+    else if (colour == "Green") cout << "GO" << endl;
+    else cout << "Invalid input" << endl;
+    
+    
+    char colour_char;
+    cout << "Enter the light colour char: ";
+    cin >> colour_char;
+    
+    switch(colour_char){
+        case 'R':
+            cout << "Stop" << endl;
+            break;
+        case 'Y':
+            cout << "Slow down" << endl;
+            break;
+        case 'G':
+            cout << "Go" << endl;
+            break;
+        default:
+        cout << "Invalid input" << endl;
+    }
+    
+
+    return 0;
+}
