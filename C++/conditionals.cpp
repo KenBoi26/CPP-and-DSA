@@ -91,6 +91,10 @@ int main() {
     
     cout << ans;
     
+    
+    string ans1 = (num == 0) ? "Zero" : (num > 0) ? "Positive" : "Negative";
+    
+    cout << ans1;
 
     return 0;
 }
