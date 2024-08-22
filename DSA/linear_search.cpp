@@ -15,7 +15,10 @@ int linear_search(int arr[], int key, int range){
 
 
 int main(){
-    int arr[5] = {5,7,2,3,9};
-    int key = 2;
+    int arr[5] = {3,5,7,2,1};
+    int key;
+
+    cin >> key;
+    
     linear_search(arr,key,5);
 }
