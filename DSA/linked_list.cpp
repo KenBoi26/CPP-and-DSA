@@ -31,6 +31,14 @@ void insertAtTail(Node* &head, int val){
     }
 }
 
+void insertAtHead(Node* &head, int val){
+
+    Node* n = new Node(val);
+
+    n->next = head;
+    head = n;
+}
+
 void display(Node* head){
     Node* temp = head;
     
@@ -50,6 +58,7 @@ int main(){
 
     insertAtTail(head,1);
     insertAtTail(head,2);
+    insertAtHead(head,100);
 
     display(head);
 
