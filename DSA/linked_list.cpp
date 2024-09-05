@@ -9,7 +9,7 @@ class Node{
 
     Node(int val){
         this->data = val;
-        next = NULL;
+        this->next = NULL;
     }
 
 };
@@ -57,6 +57,19 @@ void deletionAtHead(Node* &head, int val){
     Node* toDelete = head;
     head = head->next;
     delete toDelete;
+}
+
+bool search(Node* head, int key){
+    Node* temp = head;
+
+    while(temp != NULL){
+        if(temp->data == key){
+            return true;
+        }
+        temp = temp->next;
+    }
+
+    return false;
 }
 
 void display(Node* head){
