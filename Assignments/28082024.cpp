@@ -17,6 +17,7 @@ int findMax(int arr[], int size){
 }
 
 
+
 int main(){
     int arr[] = {1,3,2,4,5,5,4,3,6};
 
