@@ -26,3 +26,21 @@ int main(){
 
     return 0;
 }
+
+
+int main(){
+
+    // telling that we will be appending in the file
+    ofstream file("test.txt", ios::app);
+
+    if(!file){
+        cout << "Error" << endl;
+        return -1;
+    }
+
+    file << "A" << endl;
+    file << "B" << endl;
+    file << "C" << endl;
+
+    file.close();
+}
