@@ -22,6 +22,19 @@ class MyStack{
             top++;
             arr[top] = val;
         }
+
+        void pop(){
+            if(top == -1){
+                cout << "Stack Underflow" << endl;
+                return;
+            }
+
+            top--;
+        }
+
+        bool empty(){
+            
+        }
 };
 
 int main(){
