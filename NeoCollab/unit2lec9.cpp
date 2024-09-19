@@ -1,4 +1,4 @@
-// You are using GCC
+// Question 1
 #include <iostream>
 using namespace std;
 
@@ -93,7 +93,7 @@ int main(){
 
 
 
-// You are using GCC
+// Question 2
 #include <stdio.h>
 #include <stdlib.h>
 

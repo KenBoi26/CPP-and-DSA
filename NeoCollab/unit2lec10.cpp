@@ -1,4 +1,4 @@
-// You are using GCC
+// Question 1
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -86,7 +86,7 @@ int main() {
 }
 
 
-// You are using GCC
+// Question 2
 #include <stdio.h>
 #include <stdlib.h>
 

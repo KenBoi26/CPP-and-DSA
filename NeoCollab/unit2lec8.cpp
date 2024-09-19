@@ -1,4 +1,4 @@
-// You are using GCC
+// Question 1
 #include <iostream>
 using namespace std;
 
@@ -61,7 +61,7 @@ int main(){
     return 0;
 }
 
-// You are using GCC
+// Question 2
 #include <iostream>
 using namespace std;
 
@@ -161,7 +161,7 @@ int main(){
     return 0;
 }
 
-// You are using GCC
+// Question 3
 #include <iostream>
 using namespace std;
 

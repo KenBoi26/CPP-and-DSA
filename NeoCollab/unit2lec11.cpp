@@ -1,4 +1,4 @@
-// You are using GCC
+// Question 1
 #include <iostream>
 
 struct Node {
@@ -93,7 +93,7 @@ int main() {
 
 
 
-// You are using GCC
+// Question 2
 #include <iostream>
 
 struct Node {
@@ -146,7 +146,7 @@ int main() {
 
 
 
-// You are using GCC
+// Question 3
 #include <stdio.h>
 #include <stdlib.h>
 
