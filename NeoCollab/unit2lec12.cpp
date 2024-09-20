@@ -1,3 +1,5 @@
+// Question 1
+
 #include <iostream>
 
 struct Node {
@@ -79,7 +81,7 @@ int main() {
     return 0;
 }
 
-
+// Question 2
 #include <iostream>
 
 struct Node {
