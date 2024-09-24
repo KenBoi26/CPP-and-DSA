@@ -15,7 +15,7 @@ class BankAccount{
     int getBalance(){
         return balance;
     }
-}
+};
 
 
 int main(){
