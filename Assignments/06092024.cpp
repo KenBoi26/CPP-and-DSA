@@ -42,3 +42,38 @@ int main(){
 
     return 0;
 }
+
+
+
+// Ques 2: Write a C++ code that take 2D array from user input. Now you have to find sum of all values of the array.
+
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+    int n,m;
+    cin >> n >> m;
+    int arr2[n][m];
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            cin >> arr2[i][j];
+        }
+    }
+
+
+    int sum = 0;
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            sum += arr2[i][j];
+        }
+    }
+
+    cout << "The sum of the elements are: " << sum << endl;
+
+
+    return 0;
+}
