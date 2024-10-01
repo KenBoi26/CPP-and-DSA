@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 bool isPossible(vector<int> arr, int target){
