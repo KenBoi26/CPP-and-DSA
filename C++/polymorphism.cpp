@@ -40,3 +40,40 @@ int main(){
 
     return 0;
 }
+
+
+// runtime polymorphism
+
+#include<iostream>
+using namespace std;
+
+class Base{
+    public:
+    void print(){
+        cout << "From Base" << endl;
+    }
+};
+
+class Derived : public Base{
+    public:
+    void print(){
+        cout << "From Derived" << endl;
+    }
+};
+
+int main(){
+
+    // executed depending on the object
+
+    Derived d1;
+    d1.print();
+
+    Base b1;
+    b1.print();
+
+    Derived *d2 = new Derived();
+    d2->print();
+
+
+    return 0;
+}
