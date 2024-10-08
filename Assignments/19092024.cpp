@@ -1,5 +1,3 @@
-// implementing priority queue
-
 #include<iostream>
 using namespace std;
 
@@ -55,12 +53,12 @@ void peek(priorityQueue pqueue[], int size){
 }
 
 void display(priorityQueue pqueue[], int size){
-    if(size == -1){
+    if(size == 0){
         cout << "The Queue is empty" << endl;
         return;
     }
 
-    for(int i=0; i<=size; i++){
+    for(int i=0; i<size; i++){
         cout << pqueue[i].data << " ";
     }
     cout << endl;
