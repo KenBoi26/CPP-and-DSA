@@ -13,7 +13,7 @@ int main(){
         {3, "Charlie"},
         {4, "David"},
         {5, "Eve"}
-    };
+    }
 
 
     map<int, string> students2;
