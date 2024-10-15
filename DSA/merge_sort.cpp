@@ -1,63 +1,60 @@
 #include<iostream>
-#include<vector>
 using namespace std;
 
-void merge(vector < int > & arr, int s, int mid, int e){
-    vector <int> temp;
+void merge(int arr[], int l, int mid, int r){
+    int n1 = mid-l+1;
+    int n2 = r-mid;
 
-    int i = s;
-    int j = mid + 1;
+    int arr1[n1];
+    int arr2[n2];
 
-    while(i <= mid && j <= e){
-        if(arr[i] < arr[j]){
-            temp.push_back(arr[i]);
-            i++;
+    for(int i=0; i<n1; i++){
+        arr1[i] = arr[l+i];
+    }
+
+    for(int i=0; i<n2; i++){
+        arr2[i] = arr[mid+1+i];
+    }
+
+    int i=0, j=0, k=l;
+    while(i<n1 && j<n2){
+        if(arr1[i] < arr2[j]){
+            arr[k++] = arr1[i++];
         }else{
-            temp.push_back(arr[j]);
-            j++;
+            arr[k++] = arr2[j++];
         }
     }
 
-    while(i <= mid){
-        temp.push_back(arr[i]);
-        i++;
+    while(i<n1){
+        arr[k++] = arr1[i++];
     }
 
-    while(j <= e){
-        temp.push_back(arr[j]);
-        j++;
+    while(j<n2){
+        arr[k++] = arr2[j++];
     }
-
-    for(int i=s; i<=e; i++){
-        arr[i] = temp[i-s];
-    }
-
 
 }
 
-
-void mergeSortMethod(vector < int > & arr, int s, int e) {
-    if (s >= e) {
-        return;
+void mergeSort(int arr[], int l, int r){
+    if(l<r){
+        int mid = l + (r-l)/2;
+        mergeSort(arr, l, mid);
+        mergeSort(arr, mid+1, r);
+        merge(arr, l, mid, r);
     }
-
-    int mid = (s + e) / 2;
-
-    mergeSortMethod(arr, s, mid);
-    mergeSortMethod(arr, mid + 1, e);
-
-    merge(arr, s, (s+e)/2,e);
-}
-
-
-void mergeSort(vector < int > & arr, int n) {
-    mergeSortMethod(arr, 0, n-1);
 }
 
 int main(){
 
 
+    int arr[] = {12, 11, 13, 5, 6, 7};
+    int n = 6;
 
+    mergeSort(arr, 0, n-1);
+
+    for(int i=0; i<6; i++){
+        cout << arr[i] << " ";
+    }
 
     return 0;
 }

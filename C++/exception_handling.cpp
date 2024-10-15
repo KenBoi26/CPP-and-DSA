@@ -34,3 +34,28 @@ int main(){
 
     return 0;
 }
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void useItem(vector<string> inventory, int index){
+
+    try{
+        if(index < 0 || index >= inventory.size()){
+            throw exception();
+        }
+
+        cout << "Using item: " << inventory[index] << endl;
+    }
+
+    catch(exception e){
+        cout << "Exception: " << e.what() << endl;
+    }
+}
+int main(){
+    vector<string> inventory = {"Medicine", "Sword", "Health Drink"};
+
+    useItem(inventory, 5);
+}
